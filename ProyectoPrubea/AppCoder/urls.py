@@ -5,5 +5,5 @@ from .views import curso
 
 
 urlpatterns = [
-    path('AppCoder/agregacurso/<nombre>/<canada>', curso),
+    path('agregacurso/<nombre>/<canada>', curso),
 ]
