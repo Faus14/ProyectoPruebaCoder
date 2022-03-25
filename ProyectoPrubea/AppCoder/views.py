@@ -8,3 +8,18 @@ def curso1(request,nombre,canada):
     mi_curso.save()
     
     return HttpResponse(f"se genero el curso {mi_curso.nombre} y la camada {mi_curso.canada}" )
+
+
+def profesores(request):
+
+      return HttpResponse(request, "AppCoder/profesores.html")
+
+
+def estudiantes(request):
+
+      return HttpResponse(request, "AppCoder/estudiantes.html")
+
+
+def entregables(request):
+
+      return HttpResponse(request, "AppCoder/entregables.html")
