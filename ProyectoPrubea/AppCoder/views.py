@@ -12,14 +12,19 @@ def curso1(request,nombre,canada):
 
 def profesores(request):
 
-      return HttpResponse(request, "AppCoder/profesores.html")
+      return render(request, "AppCoder/profesores.html")
 
 
 def estudiantes(request):
 
-      return HttpResponse(request, "AppCoder/estudiantes.html")
+      return render(request, "AppCoder/estudiantes.html")
 
 
 def entregables(request):
 
-      return HttpResponse(request, "AppCoder/entregables.html")
+      return render(request, 'AppCoder/entregables.html')
+
+
+def inicio(request):
+
+      return render(request, "AppCoder/inicio.html")
