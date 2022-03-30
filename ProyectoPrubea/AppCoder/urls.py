@@ -5,9 +5,10 @@ from .views import curso1, entregables, estudiantes, inicio, profesores
 
 
 urlpatterns = [
-    path('', inicio),
+    path('', inicio, name="inicio"),
     path('agregacurso/<nombre>/<canada>', curso1),
-    path('profesores', profesores),
-    path('estudiantes', estudiantes),
-    path('entregables', entregables),
+    path('profesores', profesores, name="profesores"),
+    path('estudiantes', estudiantes, name="estudiantes"),
+    path('entregables', entregables, name="entregables"),
+    
 ]
